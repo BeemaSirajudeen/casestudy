@@ -1,6 +1,6 @@
 package program;
 import java.util.Scanner;
-public class Main {
+public class Casestudy1_Registration {
 	
 String name;
 String address;
@@ -8,7 +8,7 @@ String contactNumber;
 String email ;
 String proofType;
 String proofId;
-public Main(String name,String address,String contactNumber,String email,String proofType,String ProofId)
+public Casestudy1_Regestration(String name,String address,String contactNumber,String email,String proofType,String ProofId)
 {
 	this.name=name;
 	this.address=address;
@@ -20,18 +20,18 @@ public Main(String name,String address,String contactNumber,String email,String 
 }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner s=new Scanner(System.in);
-String name=s.nextLine();
-String address=s.nextLine();
-String contactNumber=s.nextLine();
-String email=s.nextLine();
-String proofType=s.nextLine();
-String proofId=s.nextLine();
-Main c=new Main(name,address,contactNumber,email,proofType,proofId);
-c.Register(name,address,contactNumber,email,proofType,proofId);
+		
+    Scanner s=new Scanner(System.in);
+    String name=s.nextLine();
+    String address=s.nextLine();
+    String contactNumber=s.nextLine();
+    String email=s.nextLine();
+    String proofType=s.nextLine();
+    String proofId=s.nextLine();
+    Casestudy1_Registration c=new Main(name,address,contactNumber,email,proofType,proofId);
+    c.Register(name,address,contactNumber,email,proofType,proofId);
 
-s.close();
+     s.close();
 	}
  void Register(String name,String address,String contactNumber,String email,String proofType,String proofId) {
 	 int id=0;
