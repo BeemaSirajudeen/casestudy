@@ -19,7 +19,8 @@ public Casestudy1_Regestration(String name,String address,String contactNumber,S
 	
 }
 
-	public static void main(String[] args) {
+  public static void main(String[] args)
+  {
 		
     Scanner s=new Scanner(System.in);
     String name=s.nextLine();
@@ -30,10 +31,10 @@ public Casestudy1_Regestration(String name,String address,String contactNumber,S
     String proofId=s.nextLine();
     Casestudy1_Registration c=new Main(name,address,contactNumber,email,proofType,proofId);
     c.Register(name,address,contactNumber,email,proofType,proofId);
-
-     s.close();
-	}
- void Register(String name,String address,String contactNumber,String email,String proofType,String proofId) {
+    s.close();
+  }
+ void Register(String name,String address,String contactNumber,String email,String proofType,String proofId) 
+ {
 	 int id=0;
 	 id++;
 		System.out.println("Enter your Name\n"+name);
@@ -44,6 +45,6 @@ public Casestudy1_Regestration(String name,String address,String contactNumber,S
 		System.out.println("Enter your proofId\n"+proofId);
 		System.out.println("Thank you for registering.Your id is\n"+id);
 
-	}
+ }
 
 }
