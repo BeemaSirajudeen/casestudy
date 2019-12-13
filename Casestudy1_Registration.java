@@ -8,7 +8,7 @@ String contactNumber;
 String email ;
 String proofType;
 String proofId;
-public Casestudy1_Regestration(String name,String address,String contactNumber,String email,String proofType,String ProofId)
+public Casestudy1_Registration(String name,String address,String contactNumber,String email,String proofType,String ProofId)
 {
 	this.name=name;
 	this.address=address;
