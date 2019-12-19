@@ -1,13 +1,13 @@
 package program;
 import java.util.Scanner;
-public class Main {
-	
-String name;
-String address;
-String contactNumber;
-String email ;
-String proofType;
-String proofId;
+public class Main
+{
+    String name;
+    String address;
+    String contactNumber;
+    String email ;
+    String proofType;
+    String proofId;
 public Main(String name,String address,String contactNumber,String email,String proofType,String ProofId)
 {
 	this.name=name;
@@ -19,23 +19,23 @@ public Main(String name,String address,String contactNumber,String email,String 
 	
 }
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner s=new Scanner(System.in);
-String name=s.nextLine();
-String address=s.nextLine();
-String contactNumber=s.nextLine();
-String email=s.nextLine();
-String proofType=s.nextLine();
-String proofId=s.nextLine();
-Main c=new Main(name,address,contactNumber,email,proofType,proofId);
-c.Register(name,address,contactNumber,email,proofType,proofId);
-
-s.close();
+	public static void main(String[] args)
+	{
+           Scanner s=new Scanner(System.in);
+           String name=s.nextLine();
+           String address=s.nextLine();
+           String contactNumber=s.nextLine();
+           String email=s.nextLine();
+           String proofType=s.nextLine();
+           String proofId=s.nextLine();
+           Main c=new Main(name,address,contactNumber,email,proofType,proofId);
+           c.Register(name,address,contactNumber,email,proofType,proofId);
+	   s.close();
 	}
- void Register(String name,String address,String contactNumber,String email,String proofType,String proofId) {
-	 int id=0;
-	 id++;
+      void Register(String name,String address,String contactNumber,String email,String proofType,String proofId)
+           {
+	        int id=0;
+	        id++;
 		System.out.println("Enter your Name\n"+name);
 		System.out.println("Enter your address\n"+address);
 		System.out.println("Enter your contactNumber\n"+contactNumber);
@@ -44,6 +44,6 @@ s.close();
 		System.out.println("Enter your proofId\n"+proofId);
 		System.out.println("Thank you for registering.Your id is\n"+id);
 
-	}
+	   }
 
 }
