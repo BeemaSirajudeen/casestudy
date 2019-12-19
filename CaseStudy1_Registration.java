@@ -1,6 +1,6 @@
 package program;
 import java.util.Scanner;
-public class Main
+public class CaseStudy1_Registration
 {
     String name;
     String address;
@@ -8,8 +8,8 @@ public class Main
     String email ;
     String proofType;
     String proofId;
-public Main(String name,String address,String contactNumber,String email,String proofType,String ProofId)
-{
+    public  CaseStudy1_Registration(String name,String address,String contactNumber,String email,String proofType,String ProofId)
+  {
 	this.name=name;
 	this.address=address;
 	this.contactNumber=contactNumber;
@@ -17,7 +17,7 @@ public Main(String name,String address,String contactNumber,String email,String 
 	this.proofType=proofType;
 	this.proofId=proofId;
 	
-}
+  }
 
 	public static void main(String[] args)
 	{
@@ -28,10 +28,10 @@ public Main(String name,String address,String contactNumber,String email,String 
            String email=s.nextLine();
            String proofType=s.nextLine();
            String proofId=s.nextLine();
-           Main c=new Main(name,address,contactNumber,email,proofType,proofId);
+           CaseStudy1_Registration c=new Main(name,address,contactNumber,email,proofType,proofId);
            c.Register(name,address,contactNumber,email,proofType,proofId);
 	   s.close();
-	}
+	 }
       void Register(String name,String address,String contactNumber,String email,String proofType,String proofId)
            {
 	        int id=0;
