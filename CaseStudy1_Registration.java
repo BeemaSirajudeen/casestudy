@@ -1,15 +1,15 @@
 package program;
 import java.util.Scanner;
-public class CaseStudy1_Registration {
-	
-String name;
-String address;
-String contactNumber;
-String email ;
-String proofType;
-String proofId;
-public  CaseStudy1_Registration(String name,String address,String contactNumber,String email,String proofType,String ProofId)
+public class CaseStudy1_Registration
 {
+        String name;
+        String address;
+        String contactNumber;
+        String email ;
+        String proofType;
+        String proofId;
+     public  CaseStudy1_Registration(String name,String address,String contactNumber,String email,String proofType,String ProofId)
+    {
 	this.name=name;
 	this.address=address;
 	this.contactNumber=contactNumber;
@@ -17,7 +17,7 @@ public  CaseStudy1_Registration(String name,String address,String contactNumber,
 	this.proofType=proofType;
 	this.proofId=proofId;
 	
-}
+     }
 
 	public static void main(String[] args) 
 	{
@@ -31,7 +31,7 @@ public  CaseStudy1_Registration(String name,String address,String contactNumber,
           CaseStudy1_Registration c=new Main(name,address,contactNumber,email,proofType,proofId);
           c.Register(name,address,contactNumber,email,proofType,proofId);
           s.close();
-	}
+	 }
  void Register(String name,String address,String contactNumber,String email,String proofType,String proofId)
          {
 	         int id=0;
@@ -44,6 +44,6 @@ public  CaseStudy1_Registration(String name,String address,String contactNumber,
 		System.out.println("Enter your proofId\n"+proofId);
 		System.out.println("Thank you for registering.Your id is\n"+id);
 
-         }
+          }
 
 }
