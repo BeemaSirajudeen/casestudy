@@ -33,7 +33,7 @@ public  CaseStudy1_Registration(String name,String address,String contactNumber,
           s.close();
 	}
  void Register(String name,String address,String contactNumber,String email,String proofType,String proofId)
-      {
+         {
 	         int id=0;
 	         id++;
 	        System.out.println("Enter your Name\n"+name);
@@ -44,6 +44,6 @@ public  CaseStudy1_Registration(String name,String address,String contactNumber,
 		System.out.println("Enter your proofId\n"+proofId);
 		System.out.println("Thank you for registering.Your id is\n"+id);
 
-      }
+         }
 
 }
