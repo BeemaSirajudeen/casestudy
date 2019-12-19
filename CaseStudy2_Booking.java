@@ -4,21 +4,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Book {
-
-	public static void main(String[] args) {
-		static int room=0;
-		String ac;
-		String cot;
-		String cable;
-		String wifi;
-		String laundry;
-		static int arr[]=new int[25];
-		void book(String ac,String cot,String cable,String wifi,String laundry) throws IOException
+public class CaseStudy2_Booking
+{
+	static int room=0;
+	String ac;
+	String cot;
+	String cable;
+	String wifi;
+	String laundry;
+	static int arr[]=new int[25];
+	
+   void book(String ac,String cot,String cable,String wifi,String laundry) throws IOException
+	{
+	    for(int i=0;i<25;i++)
 		{
-		for(int i=0;i<25;i++)
-		{
-		arr[i]=0;
+		  arr[i]=0;
 		}
 		int cost=0;
 		String c;
